@@ -1,0 +1,254 @@
+<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Scouting App</title>
+		<script src='threejscss/inflate.min.js'></script>
+		<script async src='threejscss/scouting_app.js'></script>
+		<!-- <script async src='threejscss/scouting_app.min.js'></script> -->
+		<link type="text/css" rel="stylesheet" href="threejscss/scouting_app.css">
+		<link type="text/css" rel="stylesheet" href="threejscss/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	</head>
+
+	<body class="fill">
+		<div id="container">
+			<div id="left-panel">
+				<div class="left-item" id="optionSetting">
+					<h3>Option Setting</h3>
+					<div class="attribute" id="color_change">
+						<h4>Select Skin Color</h4>
+						<div class="button-group">
+							<div class="button" id="skin_general">
+								<div class="outer">
+									<div class="height">
+										<div class="inner">General</div>
+									</div>
+								</div>			
+							</div>
+							<div class="button" id="skin_white">
+								<div class="outer">
+									<div class="height">
+										<div class="inner">White</div>
+									</div>
+								</div>			
+							</div>	
+							<div class="button" id="skin_black">
+								<div class="outer">
+									<div class="height">
+										<div class="inner">Black</div>
+									</div>
+								</div>			
+							</div>
+						</div>
+						<div class="attributeBorder"></div>	
+					</div>
+
+					<div class="attribute" id="cloth_change">
+						<h4>Select Cloth Color</h4>
+						<div class="button-group">
+							<div class="button" id="cloth_yellow">
+								<div class="outer">
+									<div class="height">
+										<div class="inner">Yellow</div>
+									</div>
+								</div>			
+							</div>
+							<div class="button" id="cloth_red">
+								<div class="outer">
+									<div class="height">
+										<div class="inner">Red</div>
+									</div>
+								</div>			
+							</div>	
+							<div class="button" id="cloth_green">
+								<div class="outer">
+									<div class="height">
+										<div class="inner">Green</div>
+									</div>
+								</div>			
+							</div>
+						</div>	
+						<div class="attributeBorder"></div>	
+					</div>
+
+					<div class="attribute">
+						<h4 class="shadowTitle">testWeight</h4>
+						<h4>testWeight</h4>
+						<input id="weightChange" type="range" min="0.85" max="1.15" step="0.01" value="1" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">testTall</h4>
+						<h4>testTall</h4>
+						<input id="tallerChange" type="range" min="0.85" max="1.15" step="0.01" value="1" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+
+					<div class="switch_button button">
+						<div class="left_button" id="animationBtn">
+							<div class="outer">
+								<div class="height">
+									<div class="inner">Animation</div>
+								</div>
+							</div>			
+						</div>
+					</div>
+
+				</div>
+
+				<div class="left-item" id="animations">
+					<h3>Animations</h3>
+					<div class="attribute">
+						<h4 class="shadowTitle">Idle</h4>
+						<h4>Idle</h4>
+						<input id="idle_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Clapping</h4>
+						<h4>Clapping</h4>
+						<input id="clapping_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Catch Ball</h4>
+						<h4>Catch Ball</h4>
+						<input id="catchball_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Defeat</h4>
+						<h4>Defeat</h4>
+						<input id="defeat_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Defeat 2</h4>
+						<h4>Defeat 2</h4>
+						<input id="defeat2_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Jump</h4>
+						<h4>Jump</h4>
+						<input id="jump_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Kick</h4>
+						<h4>Kick</h4>
+						<input id="kick_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Run</h4>
+						<h4>Run</h4>
+						<input id="run_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Run Back</h4>
+						<h4>Run Back</h4>
+						<input id="runback_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Run Front</h4>
+						<h4>Run Front</h4>
+						<input id="runfront_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Run Left</h4>
+						<h4>Run Left</h4>
+						<input id="runleft_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Run Right</h4>
+						<h4>Run Right</h4>
+						<input id="runright_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Shove</h4>
+						<h4>Shove</h4>
+						<input id="shove_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Snap</h4>
+						<h4>Snap</h4>
+						<input id="snap_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Tackle</h4>
+						<h4>Tackle</h4>
+						<input id="tackle_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Throw</h4>
+						<h4>Throw</h4>
+						<input id="throw_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Touch Down</h4>
+						<h4>Touch Down</h4>
+						<input id="touchdown_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Victory</h4>
+						<h4>Victory</h4>
+						<input id="victory_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Victory 2</h4>
+						<h4>Victory 2</h4>
+						<input id="victory2_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute">
+						<h4 class="shadowTitle">Victory 3</h4>
+						<h4>Victory 3</h4>
+						<input id="victory3_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+					<div class="attribute final_item">
+						<h4 class="shadowTitle">Warm Up</h4>
+						<h4>Warm Up</h4>
+						<input id="warmup_low" type="range" min="1" max="10" step="0.1" value="5" class="slider" />
+						<div class="attributeBorder"></div>	
+					</div>
+
+					<div class="switch_button button">
+						<div class="left_button" id="settingBtn">
+							<div class="outer">
+								<div class="height">
+									<div class="inner">Setting</div>
+								</div>
+							</div>			
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<canvas id="canvas"></canvas>
+
+			<div id="loading-overlay" class="">
+				<div id="loading-bar" class="hide">
+					<span id="bar">
+						<span id="progress"></span>
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
